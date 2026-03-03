@@ -39,6 +39,7 @@ body {
     padding: 0 20px;
 }
 
+/* 2. Cabeçalho */
 header {
     padding: 1.5rem 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -78,6 +79,7 @@ nav a {
 
 nav a:hover { color: var(--primary-color); }
 
+/* 3. Hero Section */
 #hero {
     padding: 120px 0 80px;
     text-align: center;
@@ -132,6 +134,7 @@ nav a:hover { color: var(--primary-color); }
 
 .btn-secondary:hover { background: rgba(255,255,255,0.05); }
 
+/* 4. Seção Sobre */
 #sobre { 
     padding: 100px 0; 
 }
@@ -180,6 +183,7 @@ nav a:hover { color: var(--primary-color); }
     border-color: var(--primary-color) !important;
 }
 
+/* 5. Títulos de Seção */
 h2 {
     margin-bottom: 60px;
     font-size: 2.2rem;
@@ -197,6 +201,7 @@ h2::after {
     background: var(--primary-color);
 }
 
+/* 6. Grid de Projetos */
 #projetos { 
     padding: 100px 0 60px; 
 }
@@ -235,6 +240,7 @@ h2::after {
     text-transform: uppercase;
 }
 
+/* 7. CTA GitHub */
 .github-cta {
     margin: 40px auto;
     max-width: 800px;
@@ -271,6 +277,7 @@ h2::after {
     box-shadow: 0 5px 15px var(--primary-glow);
 }
 
+/* 8. Footer */
 footer {
     padding: 60px 0;
     text-align: center;
@@ -288,10 +295,43 @@ footer a {
 
 footer a:hover { color: white; }
 
+/* modificando pra deixar um visual melhor para a versao mobile */
 @media (max-width: 768px) {
-    #hero h1 { font-size: 2.8rem; }
+    #hero h1 { 
+        font-size: 2.2rem; 
+        line-height: 1.2;
+    }
+    
+    #hero p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
     nav ul { display: none; }
-    .cta-buttons { flex-direction: column; }
-    .sobre-content { padding: 30px 20px; }
-    .github-cta { margin: 20px 20px; padding: 25px; }
+
+    .cta-buttons { 
+        flex-direction: column; 
+        padding: 0 20px;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+        padding: 12px 20px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    .sobre-content { 
+        padding: 30px 20px; 
+    }
+
+    .github-cta { 
+        margin: 30px 15px; 
+        padding: 25px; 
+    }
 }
