@@ -326,8 +326,18 @@ footer a:hover { color: white; }
         margin-bottom: 30px;
     }
 
+    /* Ajuste de escala para os cards de projetos no mobile */
+    .card {
+        padding: 25px 20px;
+    }
+
+    /* Ajuste de escala para a seção sobre no mobile */
     .sobre-content { 
-        padding: 30px 20px; 
+        padding: 25px 20px; 
+    }
+
+    .sobre-texto p {
+        font-size: 0.95rem;
     }
 
     .github-cta { 
